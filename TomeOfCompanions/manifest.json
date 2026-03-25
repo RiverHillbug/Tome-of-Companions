@@ -1,0 +1,21 @@
+{
+    "name": "Tome of Companions",
+    "version": "1.0.0",
+    "namespace": "tome_of_companions",
+    "package": "TomeOfCompanions.dll",
+    "manifest_version": 1,
+    "description": "Keep notes and tags on players you've met in Tyria.",
+    "dependencies": {
+        "bh.blishhud": ">=1.2.0"
+    },
+    "url": "https://github.com/RiverHillbug",
+    "contributors": [
+        {
+            "name": "River Hillspring",
+            "username": "River.8435",
+            "url": "https://github.com/RiverHillbug"
+        }
+    ],
+    "directories": [ "tome-of-companions" ],
+    "enabled_without_gw2": false
+}
