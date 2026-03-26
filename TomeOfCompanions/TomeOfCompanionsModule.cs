@@ -37,6 +37,7 @@ namespace TomeOfCompanions
           
         protected override void DefineSettings(SettingCollection settings) { }
 
+        // TODO: Add corner icon
         protected override /*async*/ Task LoadAsync()
         {
             var dataDir = DirectoriesManager.GetFullDirectoryPath("tome-of-companions");

@@ -13,9 +13,9 @@ namespace TomeOfCompanions.Data
         private readonly string _filePath;
         private Dictionary<string, PlayerEntry> _entries = new Dictionary<string, PlayerEntry>();
 
-        public PlayerEntriesHandler( string dataDirectory )
+        public PlayerEntriesHandler(string dataDirectory)
         {
-            _filePath = Path.Combine( dataDirectory, "PlayerEntries.json" );
+            _filePath = Path.Combine(dataDirectory, "PlayerEntries.json");
         }
 
         public void Load()
@@ -56,7 +56,7 @@ namespace TomeOfCompanions.Data
 
         public PlayerEntry GetOrCreate(string accountName)
         {
-            if ( !_entries.TryGetValue(accountName, out var entry))
+            if ( !_entries.TryGetValue(accountName, out var entry) )
             {
                 entry = new PlayerEntry { AccountName = accountName };
                 _entries[accountName] = entry;
